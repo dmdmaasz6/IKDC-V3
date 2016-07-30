@@ -1,3 +1,4 @@
+<!--xmlns:app=""-->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,49 +13,63 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="center">
+        android:layout_gravity="center"
+        tools:ignore="UselessParent">
 
-        <Button
+        <ImageButton
             android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
-            android:layout_weight="16"
             android:text="This text is below the image"
-            android:drawableTop="@drawable/funnel" />
+            android:src="@drawable/funnel"
+            tools:ignore="HardcodedText"
+            android:layout_weight="16"
+            android:scaleType="fitStart"/>
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:id="@+id/CreateRequest"
             android:layout_gravity="center_vertical"
-            android:layout_weight="16" />
+            android:layout_weight="16"
+            android:src="@drawable/handbag"
+            android:scaleType="fitStart"/>
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:id="@+id/ViewRequest"
             android:layout_gravity="center_vertical"
-            android:layout_weight="16" />
+            android:layout_weight="16"
+            android:src="@drawable/opened_handbag2"
+            android:scaleType="fitStart"/>
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:id="@+id/ModifyRequest"
             android:layout_gravity="center_vertical"
-            android:layout_weight="16" />
+            android:layout_weight="16"
+            android:src="@drawable/knife"
+            android:scaleType="fitStart"/>
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:id="@+id/SendRequest"
             android:layout_gravity="center_vertical"
-            android:layout_weight="16" />
+            android:layout_weight="16"
+            android:src="@drawable/calabash_2"
+            android:scaleType="fitStart"
+            tools:ignore="ContentDescription" />
 
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:id="@+id/ViewCompletedRequest"
             android:layout_gravity="center_vertical"
-            android:layout_weight="16" />
+            android:layout_weight="16"
+            android:src="@drawable/ovahimba_3d"
+            android:scaleType="fitStart"/>
     </LinearLayout>
 </FrameLayout>
