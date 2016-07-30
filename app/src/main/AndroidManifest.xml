@@ -20,27 +20,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".OndjatuOpen"
+            android:name=".ViewRequest"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_ondjatu"
             android:theme="@style/FullscreenTheme" />
         <activity
-            android:name=".OndjatuClosed"
+            android:name=".CreateRequest"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_ondjatu_closed"
             android:theme="@style/FullscreenTheme" />
         <activity
-            android:name=".Oruvio"
+            android:name=".ModifyRequest"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_oruvio"
             android:theme="@style/FullscreenTheme" />
         <activity
-            android:name=".Ondjupa"
+            android:name=".SendRequest"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_ondjupa"
             android:theme="@style/FullscreenTheme" />
         <activity
-            android:name=".Oserekazi"
+            android:name=".ViewCompletedRequest"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_oserekazi"
             android:theme="@style/FullscreenTheme"></activity>

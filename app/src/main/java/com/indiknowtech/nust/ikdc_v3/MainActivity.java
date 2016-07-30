@@ -1,11 +1,7 @@
 package com.indiknowtech.nust.ikdc_v3;
-
-import android.annotation.SuppressLint;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.os.Handler;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import  android.content.Intent;
@@ -28,63 +24,63 @@ public class MainActivity extends AppCompatActivity {
             actionBar.hide();
         }
         //***** View request Intent starts
-        OnClickListener ondjatuOpen = new OnClickListener() {
+        OnClickListener viewRequest = new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ondatuOpenActivity = new Intent(getApplicationContext(), OndjatuOpen.class);
-                startActivity(ondatuOpenActivity);
+                Intent viewRequestActivity = new Intent(getApplicationContext(), ViewRequest.class);
+                startActivity(viewRequestActivity);
             }
         };
-        ImageButton ondjatuOpenButton = (ImageButton) findViewById(R.id.ViewRequest);
-        ondjatuOpenButton.setOnClickListener(ondjatuOpen);
+        ImageButton viewRequestButton = (ImageButton) findViewById(R.id.ViewRequest);
+        viewRequestButton.setOnClickListener(viewRequest);
         //****  View request Intent ends
 
         //****  Create request Intent starts
-        OnClickListener ondjatuClosed = new OnClickListener() {
+        OnClickListener createRequest = new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ondatuClosedActivity = new Intent(getApplicationContext(), OndjatuClosed.class);
-                startActivity(ondatuClosedActivity);
+                Intent createRequestActivity = new Intent(getApplicationContext(), CreateRequest.class);
+                startActivity(createRequestActivity);
             }
         };
-        ImageButton ondjatuCloseButton = (ImageButton) findViewById(R.id.CreateRequest);
-        ondjatuCloseButton.setOnClickListener(ondjatuClosed);
+        ImageButton createRequestButton = (ImageButton) findViewById(R.id.CreateRequest);
+        createRequestButton.setOnClickListener(createRequest);
         //****  Create request Intent starts
 
         //****  Modify request Intent starts
-        OnClickListener oruvio = new OnClickListener() {
+        OnClickListener modifyRequest = new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent oruvioActivity = new Intent(getApplicationContext(), Oruvio.class);
-                startActivity(oruvioActivity);
+                Intent modifyRequestActivity = new Intent(getApplicationContext(), ModifyRequest.class);
+                startActivity(modifyRequestActivity);
             }
         };
-        ImageButton oruvioButton = (ImageButton) findViewById(R.id.ModifyRequest);
-        oruvioButton.setOnClickListener(oruvio);
+        ImageButton modifyRequestButton = (ImageButton) findViewById(R.id.ModifyRequest);
+        modifyRequestButton.setOnClickListener(modifyRequest);
         //****  Modify request Intent ends
 
         //****  Send request Intent starts
-        OnClickListener ondjupa = new OnClickListener() {
+        OnClickListener sendRequest = new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ondjupaActivity = new Intent(getApplicationContext(), Oruvio.class);
-                startActivity(ondjupaActivity);
+                Intent sendRequestActivity = new Intent(getApplicationContext(), ModifyRequest.class);
+                startActivity(sendRequestActivity);
             }
         };
-        ImageButton ondjupaButton = (ImageButton) findViewById(R.id.SendRequest);
-        ondjupaButton.setOnClickListener(ondjupa);
+        ImageButton sendRequestButton = (ImageButton) findViewById(R.id.SendRequest);
+        sendRequestButton.setOnClickListener(sendRequest);
         //****  Send request Intent ends
 
         //****  View completed request Intent starts
-        OnClickListener oserekazi = new OnClickListener() {
+        OnClickListener completedRequest = new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent oserekaziActivity = new Intent(getApplicationContext(), Oserekazi.class);
-                startActivity(oserekaziActivity);
+                Intent completedRequestActivity = new Intent(getApplicationContext(), ViewCompletedRequest.class);
+                startActivity(completedRequestActivity);
             }
         };
-        ImageButton oserekaziButton = (ImageButton) findViewById(R.id.ViewRequest);
-        ondjupaButton.setOnClickListener(oserekazi);
+        ImageButton completedRequestButton = (ImageButton) findViewById(R.id.ViewRequest);
+        completedRequestButton.setOnClickListener(completedRequest);
         //****  View completed request Intent ends
 
     }
