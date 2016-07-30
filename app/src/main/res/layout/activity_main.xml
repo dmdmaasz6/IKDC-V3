@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="com.indiknowtech.nust.ikdc_v3.MainActivity">
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_weight="16"
+            android:text="This text is below the image"
+            android:drawableTop="@drawable/funnel" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/CreateRequest"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="16" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/ViewRequest"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="16" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/ModifyRequest"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="16" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/SendRequest"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="16" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/ViewCompletedRequest"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="16" />
+    </LinearLayout>
+</FrameLayout>
