@@ -3,16 +3,16 @@
 
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="OmbakoHeader"><b>Ombako\n</b>Ombako iungurisiwa\n komantiro kuworongarisa oviungurisisiwa\n viombazu komahindiro</string>
-    <string name="OmbakoBody">Ombako iungurisiwa komantiro kuworongarisa oviungurisisiwa viombazu komahindiro</string>
-    <string name="OndjatuHeader">Ondjatundja patua</string>
-    <string name="OndjatuBody">Ondjatu ituvatera okuworonganisa oviungurisiwa vietu pamue</string>
-    <string name="OruvioHeader">Oruvio</string>
-    <string name="OruvioBody">Oruvio otjijarise tjokutuna imbi mbi tuaongere kumwe</string>
-    <string name="OndjupaHeader">Ondjupa</string>
-    <string name="OndjupaBody">Ondjupa otjijarise tjokuhinda</string>
-    <string name="OserekazeHeader">Oserekaze</string>
-    <string name="OserekaziBody">Oserekaze otjijarise tjokutara oviungurisiua mbiamanuka okutungua</string>
+    <string name="homeHeader">Ombako</string>
+    <string name="homeBody">Ombako iungurisiwa\n komantiro kuworongarisa \noviungurisisiwa viombazu\n komahindiro</string>
+    <string name="createReqHeader">Ondjatundja patua</string>
+    <string name="createReqBody">Ondjatu ituvatera okuworonganisa oviungurisiwa vietu pamue</string>
+    <string name="modifyHeader">Oruvio</string>
+    <string name="modifyBody">Oruvio otjijarise tjokutuna imbi mbi tuaongere kumwe</string>
+    <string name="sendHeader">Ondjupa</string>
+    <string name="sendBody">Ondjupa otjijarise tjokuhinda</string>
+    <string name="viewHeader">Oserekaze</string>
+    <string name="viewBody">Oserekaze otjijarise tjokutara oviungurisiua mbiamanuka okutungua</string>
 
     <string name="title_activity_ondjatu">Ondjatu</string>
 

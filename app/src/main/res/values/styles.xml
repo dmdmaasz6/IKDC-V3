@@ -19,5 +19,9 @@
     <style name="FullscreenActionBarStyle" parent="Widget.AppCompat.ActionBar">
         <item name="android:background">@color/black_overlay</item>
     </style>
+    <style name="loginType">
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:orientation">vertical</item>
+    </style>
 
 </resources>
