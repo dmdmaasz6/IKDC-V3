@@ -2,14 +2,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ImageFragment">
+    tools:context="com.indiknowtech.nust.ikdc_v3.fragments.ImageFragment">
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="This is the fragment"
+        android:text="This is the image fragment"
         android:id="@+id/textView"
         android:layout_gravity="center" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="80">
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical">
+
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton2"
+                android:layout_weight="50"
+                android:src="@drawable/savinghand"
+                android:scaleType="fitStart"/>
+
+            <ImageButton
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageButton"
+                android:layout_weight="50"
+                android:src="@drawable/cancellinghand"
+                android:scaleType="fitStart"/>
+        </LinearLayout>
+    </LinearLayout>
 </FrameLayout>

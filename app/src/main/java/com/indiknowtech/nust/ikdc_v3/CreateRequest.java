@@ -53,6 +53,19 @@ public class CreateRequest extends AppCompatActivity {
         textFragment = new TextFragment();
         drawingFragment = new DrawingFragment();
 
+        View.OnClickListener back_button = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                finish();
+
+            }
+        };
+        ImageButton backButton = (ImageButton) findViewById(R.id.back);
+        backButton.setOnClickListener(back_button);
+
+        //==========================================================================================
+
         //***** Load ImageFragment [Flag = 1] Starts
         View.OnClickListener load_imagefragment = new View.OnClickListener() {
             @Override
@@ -69,15 +82,19 @@ public class CreateRequest extends AppCompatActivity {
                         break;
                     case 2:
                         showHideFragment(imageFragment, audioFragment);
+                        tab_flag = 1;
                         break;
                     case 3:
                         showHideFragment(imageFragment, videoFragment);
+                        tab_flag = 1;
                         break;
                     case 4:
                         showHideFragment(imageFragment, textFragment);
+                        tab_flag = 1;
                         break;
                     case 5:
                         showHideFragment(imageFragment, drawingFragment);
+                        tab_flag = 1;
                         break;
                 }
             }
@@ -102,6 +119,23 @@ public class CreateRequest extends AppCompatActivity {
 
                         tab_flag = 2;
                         break;
+                    case 1:
+                        showHideFragment(audioFragment, imageFragment);
+                        tab_flag = 2;
+                        break;
+                    case 3:
+                        showHideFragment(audioFragment, videoFragment);
+                        tab_flag = 2;
+                        break;
+                    case 4:
+                        showHideFragment(audioFragment, textFragment);
+                        tab_flag = 2;
+                        break;
+                    case 5:
+                        showHideFragment(audioFragment, drawingFragment);
+                        tab_flag = 2;
+                        break;
+
                 }
 
             }
@@ -127,7 +161,21 @@ public class CreateRequest extends AppCompatActivity {
                         tab_flag = 3;
                         break;
                     case 1:
-                        fragmentTransaction.hide(audioFragment);
+                        showHideFragment(videoFragment, imageFragment);
+                        tab_flag = 3;
+                        break;
+                    case 2:
+                        showHideFragment(videoFragment, audioFragment);
+                        tab_flag = 3;
+                        break;
+                    case 4:
+                        showHideFragment(videoFragment, textFragment);
+                        tab_flag = 3;
+                        break;
+                    case 5:
+                        showHideFragment(videoFragment, drawingFragment);
+                        tab_flag = 3;
+                        break;
                 }
 
             }
@@ -139,13 +187,81 @@ public class CreateRequest extends AppCompatActivity {
         //==========================================================================================
 
         //**** Load Text Fragment
+        View.OnClickListener load_textfragment = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                switch (tab_flag) {
+                    case 0:
+                        fragmentTransaction = fragmentManager.beginTransaction();
+
+                        fragmentTransaction.add(R.id.container, textFragment);
+                        fragmentTransaction.commit();
+
+                        tab_flag = 4;
+                        break;
+                    case 1:
+                        showHideFragment(textFragment, imageFragment);
+                        tab_flag = 4;
+                        break;
+                    case 2:
+                        showHideFragment(textFragment, audioFragment);
+                        tab_flag = 4;
+                        break;
+                    case 3:
+                        showHideFragment(textFragment, videoFragment);
+                        tab_flag = 4;
+                        break;
+                    case 5:
+                        showHideFragment(textFragment, drawingFragment);
+                        tab_flag = 4;
+                        break;
+                }
+
+            }
+        };
+        ImageButton textFragmentButton = (ImageButton) findViewById(R.id.hand);
+        textFragmentButton.setOnClickListener(load_textfragment);
         //**** Load Text Fragment
 
         //==========================================================================================
 
         //**** Load Drawing Fragment
+        View.OnClickListener load_drawingfragment = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+                switch (tab_flag) {
+                    case 0:
+                        fragmentTransaction = fragmentManager.beginTransaction();
+
+                        fragmentTransaction.add(R.id.container, drawingFragment);
+                        fragmentTransaction.commit();
+
+                        tab_flag = 5;
+                        break;
+                    case 1:
+                        showHideFragment(drawingFragment, imageFragment);
+                        tab_flag = 5;
+                        break;
+                    case 2:
+                        showHideFragment(drawingFragment, audioFragment);
+                        tab_flag = 5;
+                        break;
+                    case 3:
+                        showHideFragment(drawingFragment, videoFragment);
+                        tab_flag = 5;
+                        break;
+                    case 4:
+                        showHideFragment(drawingFragment, textFragment);
+                        tab_flag = 5;
+                        break;
+                }
+
+            }
+        };
+        ImageButton drawingFragmentButton = (ImageButton) findViewById(R.id.drawing);
+        drawingFragmentButton.setOnClickListener(load_drawingfragment);
         //**** Load Drawing Fragment
 
         //==========================================================================================
