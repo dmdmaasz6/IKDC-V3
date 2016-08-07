@@ -1,15 +1,28 @@
 package com.indiknowtech.nust.ikdc_v3.fragments;
 
 import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 //import android.support.v4.app.Fragment;
 import android.app.Fragment;
+import android.os.Environment;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
+import android.widget.Toast;
 
+import com.indiknowtech.nust.ikdc_v3.GridView_Src.GridViewAdapter;
+import com.indiknowtech.nust.ikdc_v3.GridView_Src.ImageItem;
 import com.indiknowtech.nust.ikdc_v3.R;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
 //import com.google.firebase:firebase-ads:9.0.2;
 //import com.google.android.gms.plus.PlusOneButton;
 
@@ -22,6 +35,18 @@ import com.indiknowtech.nust.ikdc_v3.R;
  * create an instance of this fragment.
  */
 public class ImageFragment extends Fragment {
+    /**
+     * GridView Variable Declaration Section Starts
+     */
+
+    private GridView gridView;
+    private GridViewAdapter gridAdapter;
+
+    /**
+     * GridView Variable Declaration Section Ends
+     */
+
+
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -66,6 +91,14 @@ public class ImageFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        //gridView = new GridView(getActivity());
+        gridView =(GridView) getActivity().findViewById(R.id.image_gallery);
+        gridAdapter = new GridViewAdapter(getActivity(), R.layout.grid_item_layout, getData());
+        if (getActivity().findViewById(R.id.image_gallery) == null)
+        {
+            Toast.makeText(getActivity(), "Many Bitches!!!", Toast.LENGTH_LONG).show();
+        }
+        //gridView.setAdapter(gridAdapter);
     }
 
     @Override
@@ -126,5 +159,54 @@ public class ImageFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
+    /**
+     * The Section Below is responsible for retrieving the images
+     */
+
+    // Prepare some dummy data for gridview
+    private List<ImageItem> getData() {
+        final List<ImageItem> imageItems = new ArrayList<ImageItem>();
+
+        File targetDirector = new File(Environment.getExternalStorageDirectory() + "/IKDC/commonStorage/images/");
+
+        /*if (targetDirector.exists())
+        {
+            Toast.makeText(getActivity(), targetDirector.getAbsolutePath(), Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(), "Directory Found", Toast.LENGTH_LONG).show();
+        }
+        else
+        {
+            Toast.makeText(getActivity(), targetDirector.getAbsolutePath(), Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(), "No Such Directory", Toast.LENGTH_LONG).show();
+        }*/
+
+        File[] files = targetDirector.listFiles();
+
+        //Toast.makeText(getActivity(), files.toString(), Toast.LENGTH_LONG).show();
+        try {
+            for (File file : files) {
+
+                BitmapFactory.Options bmOptions = new BitmapFactory.Options();
+                Bitmap bitmap = BitmapFactory.decodeFile(file.getAbsolutePath(), bmOptions);
+                bitmap = Bitmap.createScaledBitmap(bitmap, 200, 200, true);
+
+                imageItems.add(new ImageItem(bitmap, file.getName()));
+
+                //storyGallery.addView(layout);
+
+            }
+        } catch (Exception e){
+
+        }
+
+        /*for (int i = 0; i < imgs.length(); i++) {
+            Bitmap bitmap = BitmapFactory.decodeResource(getResources(), imgs.getResourceId(i, -1));
+            imageItems.add(new ImageItem(bitmap, "Image#" + i));
+        }*/
+
+        return imageItems;
+    }
+
 
 }

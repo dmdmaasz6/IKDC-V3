@@ -5,27 +5,29 @@
     tools:context="com.indiknowtech.nust.ikdc_v3.fragments.ImageFragment">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="This is the image fragment"
-        android:id="@+id/textView"
-        android:layout_gravity="center" />
-
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center">
 
-        <FrameLayout
+        <GridView
+            android:id="@+id/image_gallery"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:columnWidth="10dp"
+            android:drawSelectorOnTop="true"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dp"
+            android:focusable="true"
+            android:clickable="true"
             android:layout_weight="80">
 
-        </FrameLayout>
+        </GridView>
 
         <LinearLayout
             android:orientation="vertical"

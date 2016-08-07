@@ -44,7 +44,12 @@ public class CreateRequest extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.hide();
         }
+
         //TODO: Determine the indigenous loading symbol
+        //TODO: Create the image gallery
+        //TODO: Create the video gallery
+        //TODO: Create the audio gallery
+        //TODO: Create the text gallery
 
         fragmentManager = getFragmentManager();
         imageFragment = new ImageFragment();
