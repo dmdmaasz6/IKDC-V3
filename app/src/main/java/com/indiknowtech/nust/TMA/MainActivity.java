@@ -1,4 +1,4 @@
-package com.indiknowtech.nust.ikdc_v3;
+package com.indiknowtech.nust.TMA;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

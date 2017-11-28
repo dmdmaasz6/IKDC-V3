@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.indiknowtech.nust.ikdc_v3">
+    package="com.indiknowtech.nust.TMA">
 
     <!-- To access Google+ APIs: -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name="com.indiknowtech.nust.TMA.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:theme="@style/FullscreenTheme">
@@ -23,27 +23,27 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ViewRequest"
+            android:name="com.indiknowtech.nust.TMA.ViewRequest"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_ondjatu"
             android:theme="@style/FullscreenTheme" />
         <activity
-            android:name=".CreateRequest"
+            android:name="com.indiknowtech.nust.TMA.CreateRequest"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_ondjatu_closed"
             android:theme="@style/FullscreenTheme" />
         <activity
-            android:name=".ModifyRequest"
+            android:name="com.indiknowtech.nust.TMA.ModifyRequest"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_oruvio"
             android:theme="@style/FullscreenTheme" />
         <activity
-            android:name=".SendRequest"
+            android:name="com.indiknowtech.nust.TMA.SendRequest"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_ondjupa"
             android:theme="@style/FullscreenTheme" />
         <activity
-            android:name=".ViewCompletedRequest"
+            android:name="com.indiknowtech.nust.TMA.ViewCompletedRequest"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_oserekazi"
             android:theme="@style/FullscreenTheme" />

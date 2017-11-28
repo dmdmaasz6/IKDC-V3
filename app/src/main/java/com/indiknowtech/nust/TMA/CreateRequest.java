@@ -1,22 +1,21 @@
-package com.indiknowtech.nust.ikdc_v3;
+package com.indiknowtech.nust.TMA;
 
 //import android.support.v4.app.FragmentManager;
 //import android.support.v4.app.FragmentTransaction;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
-import android.content.Intent;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.indiknowtech.nust.ikdc_v3.fragments.AudioFragment;
-import com.indiknowtech.nust.ikdc_v3.fragments.DrawingFragment;
-import com.indiknowtech.nust.ikdc_v3.fragments.ImageFragment;
-import com.indiknowtech.nust.ikdc_v3.fragments.TextFragment;
-import com.indiknowtech.nust.ikdc_v3.fragments.VideoFragment;
+import com.indiknowtech.nust.TMA.fragments.AudioFragment;
+import com.indiknowtech.nust.TMA.fragments.DrawingFragment;
+import com.indiknowtech.nust.TMA.fragments.ImageFragment;
+import com.indiknowtech.nust.TMA.fragments.TextFragment;
+import com.indiknowtech.nust.TMA.fragments.VideoFragment;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.

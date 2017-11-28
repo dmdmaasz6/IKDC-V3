@@ -1,4 +1,4 @@
-package com.indiknowtech.nust.ikdc_v3.fragments;
+package com.indiknowtech.nust.TMA.fragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.indiknowtech.nust.ikdc_v3.R;
+import com.indiknowtech.nust.TMA.R;
 
 /**
  * A simple {@link Fragment} subclass.

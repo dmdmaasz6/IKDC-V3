@@ -1,4 +1,4 @@
-package com.indiknowtech.nust.ikdc_v3;
+package com.indiknowtech.nust.TMA;
 
 import org.junit.Test;
 

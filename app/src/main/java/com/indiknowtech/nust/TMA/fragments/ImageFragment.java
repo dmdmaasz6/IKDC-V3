@@ -1,7 +1,6 @@
-package com.indiknowtech.nust.ikdc_v3.fragments;
+package com.indiknowtech.nust.TMA.fragments;
 
 import android.content.Context;
-import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -9,16 +8,15 @@ import android.os.Bundle;
 //import android.support.v4.app.Fragment;
 import android.app.Fragment;
 import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.GridView;
 import android.widget.Toast;
 
-import com.indiknowtech.nust.ikdc_v3.GridView_Src.GridViewAdapter;
-import com.indiknowtech.nust.ikdc_v3.GridView_Src.ImageItem;
-import com.indiknowtech.nust.ikdc_v3.R;
+import com.indiknowtech.nust.TMA.GridView_Src.GridViewAdapter;
+import com.indiknowtech.nust.TMA.GridView_Src.ImageItem;
+import com.indiknowtech.nust.TMA.R;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -96,7 +94,7 @@ public class ImageFragment extends Fragment {
         gridAdapter = new GridViewAdapter(getActivity(), R.layout.grid_item_layout, getData());
         if (getActivity().findViewById(R.id.image_gallery) == null)
         {
-            Toast.makeText(getActivity(), "Many Bitches!!!", Toast.LENGTH_LONG).show();
+            Toast.makeText(getActivity(), "Loaded!", Toast.LENGTH_LONG).show();
         }
         //gridView.setAdapter(gridAdapter);
     }

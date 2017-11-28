@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.indiknowtech.nust.ikdc_v3.fragments.DrawingFragment">
+    tools:context="com.indiknowtech.nust.TMA.fragments.DrawingFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

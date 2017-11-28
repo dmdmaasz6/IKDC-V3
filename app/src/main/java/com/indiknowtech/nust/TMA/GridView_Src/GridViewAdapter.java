@@ -1,4 +1,4 @@
-package com.indiknowtech.nust.ikdc_v3.GridView_Src;
+package com.indiknowtech.nust.TMA.GridView_Src;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.indiknowtech.nust.ikdc_v3.R;
+import com.indiknowtech.nust.TMA.R;
 
 import java.util.ArrayList;
 import java.util.List;

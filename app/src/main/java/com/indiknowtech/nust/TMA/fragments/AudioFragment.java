@@ -1,4 +1,4 @@
-package com.indiknowtech.nust.ikdc_v3.fragments;
+package com.indiknowtech.nust.TMA.fragments;
 
 import android.content.Context;
 import android.net.Uri;
@@ -8,17 +8,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.indiknowtech.nust.ikdc_v3.R;
+import com.indiknowtech.nust.TMA.R;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link VideoFragment.OnFragmentInteractionListener} interface
+ * {@link AudioFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link VideoFragment#newInstance} factory method to
+ * Use the {@link AudioFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class VideoFragment extends Fragment {
+public class AudioFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +30,7 @@ public class VideoFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public VideoFragment() {
+    public AudioFragment() {
         // Required empty public constructor
     }
 
@@ -40,11 +40,11 @@ public class VideoFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment VideoFragment.
+     * @return A new instance of fragment AudioFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static VideoFragment newInstance(String param1, String param2) {
-        VideoFragment fragment = new VideoFragment();
+    public static AudioFragment newInstance(String param1, String param2) {
+        AudioFragment fragment = new AudioFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -65,7 +65,7 @@ public class VideoFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_video, container, false);
+        return inflater.inflate(R.layout.fragment_audio, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

@@ -1,4 +1,4 @@
-package com.indiknowtech.nust.ikdc_v3;
+package com.indiknowtech.nust.TMA;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
